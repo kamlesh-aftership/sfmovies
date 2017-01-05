@@ -1,0 +1,31 @@
+{
+  "name": "sfmoviesdata",
+  "version": "1.0.0",
+  "description": "this project displays different location in San Francisco map where movies were filmed.",
+  "main": "mainApp.js",
+  "scripts": {
+    "lint": "eslint --ext .jsx,.js .",
+    "start": "SET NODE_ENV=dev && node server.js",
+    "test": "mocha --timeout 10000"
+  },
+  "keywords": [
+    "movies",
+    "map",
+    "San",
+    "Francisco"
+  ],
+  "author": "StackPath",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.5"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "eslint-config-aftership": "~3.2.1",
+    "mocha": "^3.2.0"
+  }
+}
