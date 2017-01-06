@@ -33,6 +33,10 @@ app.controller('locationController', function ($scope, $log, $http) {
 		$log.info('Text changed to ' + text);
 	} function selectedItemChange(item) {
 		if (item !== undefined) {
+			for (let i = 0; i < markers.length; i++) {
+				markers[i].setMap(null);
+			}
+			markers = [];
 			$http.get('/location/' + item.display).then(function (response) {
 				for (let i = 0; i < response.data.locations.length; i++) {
 					createmarker(response.data.locations[i]);
@@ -67,6 +71,7 @@ app.config(function ($provide, $httpProvider) {
 });
 
 let map;
+let markers = [];
 function initialize() {
 	let mapOptions = {
 		zoom: 10,
@@ -101,9 +106,10 @@ function ChangeGoogleMapsLanguage(language) {
 }
 
 function createmarker(obj) {
-	new google.maps.Marker({
+	let marker = new google.maps.Marker({
 		position: {lat: parseFloat(obj.coords.latitude), lng: parseFloat(obj.coords.longitude)},
 		map: map,
 		title: obj.name
 	});
+	markers.push(marker);
 }
