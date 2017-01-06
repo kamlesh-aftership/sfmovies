@@ -107,7 +107,7 @@ function loadScript() {
 	}
 	script.id = 'google-maps-script';
 	document.body.appendChild(script);
-	sessionStorage.removeItem('lang');
+	sessionStorage.setItem('lang', 'en');
 }
 
 window.onload = loadScript;
