@@ -22,7 +22,7 @@
                                     <label>Pick a Language</label>
                                     <select class="form-control" ng-model="selectedLocale"  ng-change="ctrl.ChangeGoogleMapsLanguage(selectedLocale)">
                                             <option value="en">English</md-option>
-                                            <option value="zh">Chienese</md-option>
+                                            <option value="zh">Chinese</md-option>
                                     </select>
                                  </div>
                                 <md-autocomplete flex-gt-sm="" ng-disabled="ctrl.isDisabled" md-no-cache="ctrl.noCache" md-selected-item="ctrl.selectedItem"  md-search-text="ctrl.searchText" md-selected-item-change="ctrl.selectedItemChange(item)" md-items="item in ctrl.querySearch(ctrl.searchText)" md-item-text="item.display" md-min-length="0" placeholder="Search movie" id="select">
