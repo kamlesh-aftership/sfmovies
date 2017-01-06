@@ -1,6 +1,7 @@
 # SF Movies
 
 Map that shows filming locations of movies shot in San Francisco starting from 1924.
+You can checkout the SF Movies video in video folder.
 
 # Getting Started
 
@@ -22,7 +23,7 @@ Mongo DB : 3.4.1 (https://www.mongodb.com/download-center#community)
 
 # Working Demo
 
-To see the project working check out the link http://45.55.37.79:8081/sfmovies. Also checkout the video in video folder.
+To see the project working check out the link http://45.55.37.79:8081/sfmovies.
 
 # Versioning
 
