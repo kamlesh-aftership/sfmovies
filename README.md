@@ -20,6 +20,10 @@ Nodejs : 6.9.2 (https://nodejs.org/en/)
 AngularJS : 1.6.1 (https://angularjs.org/)
 Mongo DB : 3.4.1 (https://www.mongodb.com/download-center#community) 
 
+# Working Demo
+
+To see the project working check out the link http://45.55.37.79:8081/sfmovies. Also checkout the video in video folder.
+
 # Versioning
 
 1.0.0
