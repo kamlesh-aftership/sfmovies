@@ -9,6 +9,7 @@ let should = chai.should();
 
 chai.use(chaiHttp);
 
+// test case for getall movei api call
 describe('/GET Movie', () => {
 	it('it should GET all the movies', (done) => {
 		chai.request(server)
@@ -22,6 +23,7 @@ describe('/GET Movie', () => {
 	});
 });
 
+// test case for get movie by name api call
 describe('/GET/:name movie', () => {
 	it('it should GET a movie by the given name', (done) => {
 		chai.request(server)
