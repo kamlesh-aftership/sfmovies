@@ -11,6 +11,7 @@ const route = require('./config/routes');
 app.use('/sfmovies', express.static(__dirname + '/assets'));
 app.use(bodyParser.json());
 
+// api call for get movie by name
 app.get('/location/:name', function (req, res) {
 	let promise = route.getMovieByName(req.params.name);
 	promise.then(function (data) {
@@ -21,6 +22,7 @@ app.get('/location/:name', function (req, res) {
 	});
 });
 
+// api call for get all movie
 app.get('/location', function (req, res) {
 	let promise = route.getAllMovie();
 	promise.then(function (data) {
